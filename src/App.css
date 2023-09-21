@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 15px;
+}
+
+.box{
+    background-color:rgb(211, 239, 230);
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 10px;
+    display: grid;
+}
+
+.menu { grid-area: text1; }
+p { grid-area: text; }
+img { grid-area: img; }
+
+.minibox {
+    display: grid;
+    grid-template:  'text1 img'
+                    'text img';
+    padding: 10px;
+}
+
+
+.toclick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    width: fit-content;
+    height: 20px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0px 15px 0px 15px;
+    background-color: aliceblue;
+}
+
+.minibox img {
+    margin: 10px 15px 0px 15px;
+}
+
+.minibox p {
+    margin: 0px 15px 0px 15px;
+}
